@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Literata } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const literata = Literata({
+  subsets: ["latin"],
+  variable: "--font-literata",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-stone-50 text-stone-800">
+  lang="en"
+  className={`${geistSans.variable} ${geistMono.variable} ${literata.variable} h-full antialiased`}
+>
+      <body className="min-h-full flex flex-col bg-stone-50 text-stone-800 font-[var(--font-literata)]">
   <nav className="mx-auto flex w-full max-w-2xl gap-6 px-6 py-6 text-sm">
   <a href="/">Home</a>
   <a href="/about">About</a>
