@@ -1,4 +1,4 @@
-import { posts } from "./writing/posts";
+import { posts } from "./life/posts";
 
 export default function Home() {
   const recentPosts = posts.slice(0, 3);
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="mt-8 space-y-8">
           {recentPosts.map((post) => (
             <article key={post.slug}>
-              <a href={`/writing/${post.slug}`} className="group">
+              <a href={`/life/${post.slug}`} className="group">
                 <h3 className="text-lg font-medium tracking-tight group-hover:underline underline-offset-4">
                   {post.title}
                 </h3>
@@ -39,10 +39,10 @@ export default function Home() {
         </div>
 
         <a
-          href="/writing"
+          href="/life"
           className="mt-8 inline-block text-sm underline underline-offset-4"
         >
-          View all writing
+          View all entries
         </a>
       </section>
     </main>
