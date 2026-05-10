@@ -53,19 +53,19 @@ export default function DomesticLogisticsAndStrategicEncounters() {
 
       <div className="mt-16 space-y-12">
         <img
-          src="/Mayday1.jpg"
+          src="/images/Mayday1.jpg"
           alt="May Day holiday photo"
           className="w-full rounded-lg"
         />
 
         <img
-          src="/mayday2.jpg"
+          src="/images/Mayday2.jpg"
           alt="May Day holiday photo"
           className="w-full rounded-lg"
         />
 
         <img
-          src="/mayday3.jpg"
+          src="/images/Mayday3.jpg"
           alt="May Day holiday photo"
           className="w-full rounded-lg"
         />
